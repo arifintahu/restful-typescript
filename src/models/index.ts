@@ -1,5 +1,3 @@
 import { User } from './user';
 
-export {
-	User
-}
+export { User };

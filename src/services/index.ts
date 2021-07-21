@@ -1,5 +1,3 @@
 import user from './user.service';
 
-export {
-	user
-}
+export { user };

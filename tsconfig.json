@@ -1,14 +1,11 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "target": "es2017",
-        "rootDir": "./src",
-        "outDir": "./dist",
-        "esModuleInterop": false,
-        "typeRoots": [
-            "node_modules/@types",
-            "src/@types"
-        ]
-    }
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": false,
+    "typeRoots": ["node_modules/@types", "src/@types"]
+  }
 }

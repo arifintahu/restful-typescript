@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { db }  from '../loaders/sequelize';
+import { db } from '../loaders/sequelize';
 
 export class User extends Model {}
 User.init(
