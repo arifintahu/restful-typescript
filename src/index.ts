@@ -2,12 +2,13 @@ import * as express from 'express';
 import loaders from './loaders';
 import { createServer } from 'http';
 import { Server } from 'net';
+import { Application } from 'express';
 
 export async function startServer(): Promise<Server> {
-  const app = express();
+  const app: Application = express();
   await loaders(app);
 
-  const PORT = Number(process.env.PORT) || 3000;
+  const PORT: number = parseInt(<string>process.env.PORT, 10) || 3000;
 
   app.set('port', PORT);
   const httpServer = createServer(app);

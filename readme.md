@@ -1,6 +1,6 @@
-1. RESTful API
+1. RESTful API [v]
 2. End-to-end test
-3. Linting
+3. Linting [v]
 4. Use case test
 5. API Documentation
-6. Prettier
+6. Prettier [v]

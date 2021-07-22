@@ -6,7 +6,7 @@ import { Application } from 'express';
 
 export default function loadExpress(app: Application): Promise<void> {
   return new Promise((resolve, reject) => {
-    const API = process.env.API || 'api';
+    const API: string = process.env.API || 'api';
     try {
       app.use(express.urlencoded({ extended: true }));
       app.use(express.json());

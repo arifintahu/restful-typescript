@@ -1,12 +1,12 @@
-import { Router } from 'express';
+import { Router, Request, Response } from 'express';
 import { userController } from '../../controllers';
 
-const route = Router();
+const route: Router = Router();
 
-route.get('/user', (req, res) => {
+route.get('/user', (req: Request, res: Response) => {
   userController.userFindController(req, res);
 });
-route.post('/user', (req, res) => {
+route.post('/user', (req: Request, res: Response) => {
   userController.userCreateController(req, res);
 });
 
