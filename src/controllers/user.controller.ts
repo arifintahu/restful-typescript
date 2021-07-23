@@ -3,7 +3,7 @@ import { Request, Response } from 'express';
 
 export default {
   userFindController: async (req: Request, res: Response): Promise<void> => {
-    const result = await user.userFind();
+    const result = await user.userFindAll();
     if (result) {
       res.send(result);
     } else {
